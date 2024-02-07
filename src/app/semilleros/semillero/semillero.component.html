@@ -1,0 +1,107 @@
+<div class="card">
+  <div class="card-header py-3">
+      <div class="col-md-6 text-nowrap">
+          <div class="mb-4" id="dataTable_length"></div>
+      </div>
+      <div class="d-sm-flex justify-content-between align-items-center mb-4">
+          <h3 class="text-dark mb-0">Semilleros registrados</h3>
+      </div>
+  </div>
+  <div class="card-body mb-4">
+      <div class="row" style="margin-bottom: 20px;">
+          <div class="col">
+              <form>
+                  <div class="row">
+                      <div class="col-3" style="margin-bottom: 5px;margin-top: 6px;">
+                          <div placeholder="user.name" name="username"><input class="form-control" type="text" id="username-1" placeholder="Buscar..." name="fechaInicio"></div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col">
+                          <div placeholder="user.name" name="username">
+                              <hr>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6 text-nowrap">
+              <div id="dataTable_length-1" class="dataTables_length" aria-controls="dataTable"><label class="form-label">Mostrar&nbsp;<select class="d-inline-block form-select form-select-sm">
+                          <option value="10" selected="">10</option>
+                          <option value="25">25</option>
+                          <option value="50">50</option>
+                          <option value="100">100</option>
+                      </select>&nbsp;</label></div>
+          </div>
+      </div>
+      <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
+          <table class="table my-0" id="dataTable">
+              <thead>
+                  <tr>
+                      <th style="margin-right: -1px;padding-right: 10px;">Id</th>
+                      <th>Nombre</th>
+                      <th>Email</th>
+                      <th>Fecha creación</th>
+                      <th>Estado</th>
+                      <th>Acciones</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>33</td>
+                      <td>Agora - investigación politica</td>
+                      <td>agora.edu.co</td>
+                      <td>16/06/2016</td>
+                      <td>activo</td>
+                      <td><a class="btn btn-light btn-sm d-none d-sm-inline-block" role="button" href="infoSemillero.html" style="margin-bottom: 5px;"><i class="far fa-eye"></i></a><a class="btn btn-info btn-sm d-none d-sm-inline-block" role="button" href="infoSemillero.html" data-bs-target="#modal-editarEstadoSemillero" data-bs-toggle="modal">Estado</a></td>
+                  </tr>
+                  <tr>
+                      <td>47</td>
+                      <td>Alfabetos y lenguajes</td>
+                      <td>alfa.edu.co</td>
+                      <td>13/09/2017</td>
+                      <td>Inactivo</td>
+                      <td><a class="btn btn-light btn-sm d-none d-sm-inline-block" role="button" href="infoSemillero.html" style="margin-bottom: 5px;"><i class="far fa-eye"></i></a><a class="btn btn-info btn-sm d-none d-sm-inline-block" role="button">Estado</a></td>
+                  </tr>
+                  <tr>
+                      <td>66</td>
+                      <td>Altenua-mardis-unicauca</td>
+                      <td>alte.edu.co</td>
+                      <td>27/09/2022</td>
+                      <td>Revisión VRI</td>
+                      <td><a class="btn btn-light btn-sm d-none d-sm-inline-block" role="button" href="infoSemillero.html" style="margin-bottom: 5px;"><i class="far fa-eye"></i></a><a class="btn btn-info btn-sm d-none d-sm-inline-block" role="button" data-bs-target="#modal-editarEstadoSemillero" data-bs-toggle="modal">Estado</a></td>
+                  </tr>
+                  <tr></tr>
+              </tbody>
+              <tfoot>
+                  <tr>
+                      <td><strong>Id</strong></td>
+                      <td><strong>Nombre</strong></td>
+                      <td><strong>Email</strong></td>
+                      <td><strong>Fecha creacion</strong></td>
+                      <td><strong>Estado</strong></td>
+                      <td><strong>Acciones</strong></td>
+                  </tr>
+              </tfoot>
+          </table>
+      </div>
+      <div class="row">
+          <div class="col-md-6 align-self-center">
+              <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Visualizando 3 de 3</p>
+          </div>
+          <div class="col-md-6">
+              <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
+                  <ul class="pagination">
+                      <li class="page-item disabled"><a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+  </div>
+</div>
