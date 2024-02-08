@@ -10,21 +10,21 @@ import { catchError, throwError } from 'rxjs';
 })
 export class ServicioSemilleroService {
   private urlApi='http://localhost:8081/api/semilleros';
-  token="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5dXJhbmlAdW5pY2F1Y2EuZWR1LmNvIiwiaWF0IjoxNzA3MzIzNTE5LCJleHAiOjE3MDc0MDk5MTl9.2H8GXxVOldtdMTwSlyuEzs0iiSdBOA2_GlIlWWVENZs";
+  token="eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5dXJhbmlAdW5pY2F1Y2EuZWR1LmNvIiwiaWF0IjoxNzA3MzQ1ODE5LCJleHAiOjE3MDc0MzIyMTl9.OfT6wze8C2iNof9HwAAA373AtSQq8lbQWRhVDeAVE5w";
 
 
-  constructor(private Http:HttpClient) {
+  constructor(private http:HttpClient) {
 
    }
 
-   obtenerSemilleros(){
+   obtenerSemilleros(numPagina:number,paginas:number){
 
     const httpHeaders={headers: new HttpHeaders({
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + this.token
     }),}
 
-      return this.Http.get<RespuestaModelo>(`${this.urlApi}/paginado`,httpHeaders)
+      return this.http.get<RespuestaModelo>(`${this.urlApi}/paginado?pageNo=${numPagina}&pageSize=${paginas}`,httpHeaders)
 
 
    }
