@@ -1,22 +1,73 @@
-<nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark">
+<nav class="navbar align-items-start sidebar accordion bg-gradient-primary p-0 navbar-dark" >
   <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
-    <div class="sidebar-brand-icon rotate-n-15">
-      <span>sivri</span>
-      <img class="fas fa-laugh-wink" src="../../assets/svg/logo-carita.svg" alt="logo" width="80%" height="80%" />
-    </div>
-    <div class="sidebar-brand-text mx-3"></div>
-  </a>
-  <hr class="sidebar-divider my-0">
-  <ul class="navbar-nav text-light" id="accordionSidebar">
-    <li class="nav-item"><a class="nav-link" href="#"><img class="fas fa-tachometer-alt" src="../../../assets/svg/home.svg"/><span>Inicio</span></a></li>
-    <li class="nav-item"><a class="nav-link" href="#"><img class="fas fa-tachometer-alt" src="../../../assets/svg/dashboard.svg"/><span>Semilleros</span></a></li>
-    <li class="nav-item"><a class="nav-link" href="#"><img class="fas fa-tachometer-alt" src="../../../assets/svg/integrantes.svg"/><span>Integrantes Semillero</span></a></li>
-    <li class="nav-item"><a class="nav-link" href="#"><img class="fas fa-tachometer-alt" src="../../../assets/svg/proyectos.svg"/><span>Proyectos Semillero</span></a></li>
-    <li class="nav-item"><a class="nav-link" href="#"><img class="fas fa-tachometer-alt" src="../../../assets/svg/solicitudes.svg"/><span>Solicitudes VRI</span></a></li>
-    <li class="nav-item"></li>
-    <li class="nav-item"></li>
-  </ul>
-  <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
+          <div class="sidebar-brand-icon rotate-n-15"><span>sivri</span>
+            <img class="fas fa-laugh-wink" src="../../assets/svg/logo-carita.svg" alt="logo" width="70%" height="70%" />
+          </div>
+
+      </a>
+      <hr class="sidebar-divider my-0">
+      <ul class="navbar-nav text-light" id="accordionSidebar">
+          <li class="nav-item"><a class="nav-link" href="#">
+            <img class="fas fa-tachometer-alt" src="../../../assets/svg/home.svg" /><span>Inicio</span><span>Inicio</span>
+          </a></li>
+          <li class="nav-item"><a class="nav-link" href="semilleros.html">
+            <img class="fas fa-tachometer-alt" src="../../../assets/svg/dashboard.svg" /><span>Semilleros</span></a>
+          </li>
+          <li class="nav-item"><a class="nav-link active active" href="integrantes-semilleros.html">
+            <img class="fas fa-tachometer-alt" src="../../../assets/svg/integrantes.svg" /><span>Integrante Semillero</span></a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="proyectos-semilleros.html">
+            <img class="fas fa-tachometer-alt" src="../../../assets/svg/proyectos.svg" /><span>Proyectos Semillero</span></a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="solicitudes-vri.html">
+            <img class="fas fa-tachometer-alt" src="../../../assets/svg/solicitudes.svg" /><span>Solicitudes VRI</span></a>
+          </li>
+      </ul>
+      <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
   </div>
 </nav>
 
+
+<!--nav class="navbar align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0 navbar-dark">
+  <div class="container-fluid d-flex flex-column p-0"><a
+      class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+      <div class="sidebar-brand-icon rotate-n-15">
+        <span>sivri</span>
+        <img class="fas fa-laugh-wink" src="../../assets/svg/logo-carita.svg" alt="logo" width="80%" height="80%" />
+      </div>
+      <div class="sidebar-brand-text mx-3"></div>
+    </a>
+    <hr class="sidebar-divider my-0">
+    <ul class="navbar-nav text-light" id="accordionSidebar">
+      <li class="nav-item" routerLink="active">
+        <a class="nav-link" [routerLink]="['semilleros']" routerLinkActive="router-link-active">
+          <img class="fas fa-tachometer-alt" src="../../../assets/svg/home.svg" /><span>Inicio</span>
+        </a>
+      </li>
+      <li class="nav-item" routerLink="active">
+        <a class="nav-link" [routerLink]="['semilleros']">
+          <img class="fas fa-tachometer-alt" src="../../../assets/svg/dashboard.svg" /><span>Semilleros</span>
+        </a>
+      </li>
+      <li class="nav-item" routerLink="active">
+        <a class="nav-link" [routerLink]="['integrantesSemillero']">
+          <img class="fas fa-tachometer-alt" src="../../../assets/svg/integrantes.svg" /><span>Integrantes
+            Semillero</span>
+        </a>
+      </li>
+      <li class="nav-item" routerLink="active">
+        <a class="nav-link" [routerLink]="['#']">
+          <img class="fas fa-tachometer-alt" src="../../../assets/svg/proyectos.svg" /><span>Proyectos Semillero</span>
+        </a>
+      </li>
+      <li class="nav-item" routerLink="active">
+        <a class="nav-link" [routerLink]="['#']">
+          <img class="fas fa-tachometer-alt" src="../../../assets/svg/solicitudes.svg" /><span>Solicitudes VRI</span>
+        </a>
+      </li>
+
+    </ul>
+    <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle"
+        type="button"></button></div>
+  </div>
+</nav-->

@@ -61,10 +61,12 @@
                     <tr *ngFor="let item of semilleroModelo">
                         <td>{{item.semilleroId}}</td>
                         <td>{{item.nombre}}</td>
-                        <td>agora.edu.co FALTA</td>
+                        <td>{{item.correo}}</td>
                         <td>{{item.fechaCreacion}}</td>
                         <td>{{item.estado}}</td>
-                        <td><a class="btn btn-light btn-sm d-none d-sm-inline-block" role="button" href="infoSemillero.html" style="margin-bottom: 5px;"><img class="far fa-eye" src="../../../assets/svg/mostrar.svg"/></a><a class="btn btn-info btn-sm d-none d-sm-inline-block" role="button" href="infoSemillero.html" data-bs-target="#modal-editarEstadoSemillero" data-bs-toggle="modal">Estado</a></td>
+                        <td><a class="btn btn-light btn-sm d-none d-sm-inline-block" role="button" href="" style="margin-bottom: 5px;">
+                            <img class="far fa-eye" src="../../../assets/svg/mostrar.svg"/>
+                            </a><a class="btn btn-info btn-sm d-none d-sm-inline-block" role="button" href="infoSemillero.html" data-bs-target="#modal-editarEstadoSemillero" data-bs-toggle="modal">Estado</a></td>
                     </tr>
 
                 </tbody>
